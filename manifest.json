@@ -1,0 +1,25 @@
+{
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    },
+    "manifest_version": 2,
+    "name": "Performance Monitor",
+    "version": "1.0",
+    "description": "A performance monitor to show cpu and memory status.",
+    "icons": {
+        "16": "img/icon16.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+    "externally_connectable": {
+      "matches": ["*://*.corp.dinghuo123.com/*"]
+    },
+    "permissions": [
+        "system.cpu",
+        "system.memory",
+        "usb",
+        "serial"
+    ]
+}
